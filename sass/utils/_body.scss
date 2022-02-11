@@ -6,6 +6,19 @@ body {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+    }
+
 }
 
 .container {

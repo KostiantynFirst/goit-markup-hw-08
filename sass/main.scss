@@ -1,4 +1,5 @@
 @import './utils/variables';
+@import './utils/breakpoints';
 @import './base/normalize';
 @import './utils/reset-browser-styles';
 @import './utils/visually-hidden';
@@ -22,7 +23,7 @@
 @import './components/modal';
 @import './components/form';
 @import './components/checkbox';
-@import './utils/breakpoints'
+
 
 
 
