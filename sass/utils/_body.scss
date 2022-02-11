@@ -6,6 +6,12 @@ body {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+}
+
+.container {
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 
     @media screen and (min-width: $mobile) {
         width: $mobile;
@@ -19,11 +25,4 @@ body {
         width: $desktop;
     }
 
-}
-
-.container {
-    margin: 0 auto;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
 }
