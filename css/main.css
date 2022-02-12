@@ -492,6 +492,10 @@ body {
   padding-bottom: 60px;
 }
 
+.section__features {
+  padding-bottom: 0;
+}
+
 .section__title {
   color: #212121;
   font-size: 36px;
@@ -502,7 +506,6 @@ body {
 
 .features {
   max-width: 450px;
-  text-align: center;
 }
 
 .features__icons {
@@ -532,6 +535,11 @@ body {
 
 .features__item {
   max-width: 450px;
+  text-align: center;
+}
+
+.features__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -586,8 +594,9 @@ body {
 }
 
 .persons__block {
-  padding: 30px 60px;
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 16px;
 }
 
 .persons__title {
@@ -608,7 +617,8 @@ body {
 }
 
 .persons__item {
-  width: 270px;
+  max-width: 450px;
+  padding-bottom: 24px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -616,7 +626,7 @@ body {
 }
 
 .persons__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .button {
@@ -943,7 +953,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 30px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
