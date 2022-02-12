@@ -382,6 +382,12 @@ body {
   margin-right: 50px;
 }
 
+@media screen and (max-width: 768px) {
+  .sitenav {
+    display: none;
+  }
+}
+
 .sitenav__link {
   position: relative;
   display: block;
@@ -416,34 +422,21 @@ body {
 }
 
 .authnav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: auto;
 }
 
+@media screen and (max-width: 768px) {
+  .authnav {
+    display: none;
+  }
+}
+
 .authnav--footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: currentColor;
   text-decoration: none;
-}
-
-.authnav__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .authnav__item:not(:last-child) {
@@ -456,22 +449,6 @@ body {
 }
 
 .authnav__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  text-decoration: none;
-  justify-content: center;
-  align-items: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -540,23 +517,21 @@ body {
 }
 
 .features {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  max-width: 480px;
 }
 
 .features__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 270px;
-  height: 120px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 270px;
+  height: 120px;
   margin-bottom: 30px;
   background-color: #F5F4FA;
   border-radius: 4px;
@@ -584,6 +559,12 @@ body {
 
 .features__item:not(:last-child) {
   margin-right: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .jobs-container {
+    display: none;
+  }
 }
 
 .jobs {
@@ -628,9 +609,7 @@ body {
 }
 
 .persons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  max-width: 480px;
 }
 
 .persons__block {

@@ -3,7 +3,8 @@
 }
 
 .persons {
-    display: flex;
+    // display: flex;
+    max-width: $mobile;
 
     &__block {
         padding: 30px 60px;

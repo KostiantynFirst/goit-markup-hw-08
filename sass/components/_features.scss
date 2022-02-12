@@ -1,12 +1,13 @@
 .features {
-    display: flex;
+    // display: flex;
+    max-width: $mobile;
 
     &__icons {
         display: flex;
-        width: 270px;
-        height: 120px;
         justify-content: center;
         align-items: center;
+        width: 270px;
+        height: 120px;
         margin-bottom: 30px;
         background-color: $background-secondary-color;
         border-radius: 4px;
