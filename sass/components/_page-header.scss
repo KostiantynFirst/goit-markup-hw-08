@@ -2,10 +2,10 @@
     background-color: $secondary-text-color;
     border-bottom: 1px solid #ECECEC;
 
-
     &__container {
         display: flex;
         align-items: center;
+        height: 60px;
     }
 
     &__nav {
