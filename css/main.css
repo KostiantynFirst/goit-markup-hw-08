@@ -492,8 +492,10 @@ body {
   padding-bottom: 60px;
 }
 
-.section__features {
-  padding-bottom: 0;
+@media screen and (max-width: 1200px) {
+  .section__jobs {
+    display: none;
+  }
 }
 
 .section__title {
@@ -540,12 +542,6 @@ body {
 
 .features__item:not(:last-child) {
   margin-bottom: 30px;
-}
-
-@media screen and (max-width: 1200px) {
-  .jobs-container {
-    display: none;
-  }
 }
 
 .jobs {
