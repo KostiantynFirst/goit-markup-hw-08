@@ -1,10 +1,13 @@
+.workers-container {
+    max-width: $mobile;;
+}
+
 .workers {
     background-color: $background-secondary-color;
 }
 
 .persons {
     // display: flex;
-    max-width: $mobile;
 
     &__block {
         padding: 30px 60px;
