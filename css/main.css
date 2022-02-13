@@ -625,6 +625,10 @@ body {
   margin-bottom: 30px;
 }
 
+.persons__item__img {
+  width: 450px;
+}
+
 .button {
   border: none;
   border-radius: 4px;
