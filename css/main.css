@@ -526,7 +526,6 @@ body {
 }
 
 .features__item {
-  max-width: 450px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
