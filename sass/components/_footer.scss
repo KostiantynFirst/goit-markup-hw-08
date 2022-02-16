@@ -8,9 +8,12 @@
     background-color: $background-third-color;
     text-align: center;
 
-    // &__container {
-    //     display: flex;
-    // }
+    &__container {
+            @media screen and (min-width: 768px) {
+                display: flex;
+                justify-content: space-around;
+        }
+    }
     
     // &__links {
     //     margin-right: 70px;
@@ -52,6 +55,8 @@
     // }
     
     &__contact {
+        display: flex;
+        justify-content: center;
         position: relative;
         padding: 0;
         margin-bottom: 20px;
@@ -85,14 +90,19 @@
     &__icon {
         position: absolute;
         top: 50%;
-        right: 150px;
+        right: 163px;
         transform: translateY(-50%);
         fill: $secondary-text-color;
     }
 
+
+
 }
 
+
+
 .footer__mail {
+    display: block;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);

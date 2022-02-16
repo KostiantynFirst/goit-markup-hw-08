@@ -989,6 +989,16 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .footer__address {
   margin-top: 20px;
 }
@@ -1014,6 +1024,12 @@ body {
 }
 
 .footer__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   padding: 0;
   margin-bottom: 20px;
@@ -1043,13 +1059,14 @@ body {
 .footer__icon {
   position: absolute;
   top: 50%;
-  right: 150px;
+  right: 163px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   fill: #FFFFFF;
 }
 
 .footer__mail {
+  display: block;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
