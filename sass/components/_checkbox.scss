@@ -5,7 +5,7 @@
     align-items: center;
     margin-top: 20px;
     margin-bottom: 30px;
-    margin-right: 8.5px;
+    // margin-right: 8.5px;
 
     font-size: 14px;
     line-height: 1.71;
@@ -20,7 +20,12 @@
     }
 
     &__link {
-        margin-left: 6px;
+        margin-left: 4px;
+
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+
         text-decoration: none;
         color: $accent-color;
         border-bottom: 1px solid $accent-color;
@@ -31,6 +36,12 @@
         display: flex;
         flex-direction: row-reverse;
         align-items:center;
+        justify-content: center;
+
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        // white-space: nowrap;
     }
     
 }
@@ -41,7 +52,7 @@
     height: 15px;
     border: 2px solid $title-text-color;
     border-radius: 2px;
-    margin-right: 7px;
+    margin-right: 8px;
 
     .checkbox__input:checked + & {
         border-color: $accent-color;
