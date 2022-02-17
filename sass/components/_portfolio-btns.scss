@@ -1,9 +1,11 @@
 .btns {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 56px;
     white-space: nowrap;
-
+    
+    &__item {
+        margin-bottom: 15px;
+    }
 
     &__item:not(:last-child) {
         margin-right: 8px;
@@ -13,9 +15,12 @@
         justify-content: center;
     }
 
+    @media screen and (max-width: 768px) {
+        margin-bottom: 30px;
+    }
 
-    &__item {
-        margin-bottom: 15px;
+    @media screen and (max-width: 1200px) {
+        margin-bottom: 56px;
     }
 }
 

@@ -356,10 +356,24 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   height: 60px;
 }
 
 .header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -591,8 +605,10 @@ body {
   margin-right: auto;
 }
 
-.features .features__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .features .features__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -782,6 +798,42 @@ body {
   background-color: #2196F3;
 }
 
+.menu-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 796px;
+  padding: 20px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
 .client__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -866,8 +918,11 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 56px;
   white-space: nowrap;
+}
+
+.btns__item {
+  margin-bottom: 15px;
 }
 
 .btns__item:not(:last-child) {
@@ -882,12 +937,16 @@ body {
   }
 }
 
-.btns__item {
-  margin-bottom: 15px;
+@media screen and (max-width: 768px) {
+  .btns {
+    margin-bottom: 30px;
+  }
 }
 
-.portfolio {
-  margin: -30px;
+@media screen and (max-width: 1200px) {
+  .btns {
+    margin-bottom: 56px;
+  }
 }
 
 .portfolio__link {
@@ -940,7 +999,12 @@ body {
 
 .portfolio__item {
   max-width: 450px;
-  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1059,7 +1123,7 @@ body {
 .footer__icon {
   position: absolute;
   top: 50%;
-  right: 163px;
+  right: 34%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   fill: #FFFFFF;
@@ -1071,7 +1135,7 @@ body {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  left: 16px;
+  left: 6%;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
