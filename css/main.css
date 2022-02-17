@@ -347,6 +347,7 @@ body {
 .header {
   background-color: #FFFFFF;
   border-bottom: 1px solid #ECECEC;
+  position: relative;
 }
 
 .header__container {
@@ -820,6 +821,7 @@ body {
 }
 
 .menu-container {
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
@@ -832,6 +834,10 @@ body {
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #212121;
+}
+
+.menu-container.is-open {
+  display: block;
 }
 
 .client__list {

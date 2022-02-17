@@ -86,6 +86,8 @@
 } 
 
 .menu-container {
+    display: none;
+
     position: absolute;
     top: 100%;
     left: 0;
@@ -102,6 +104,10 @@
     letter-spacing: 0.02em;
 
     color: $title-text-color;
+
+    &.is-open {
+        display: block;
+    }
 }
 
 
