@@ -317,18 +317,23 @@ body.modal-open {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 480px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -1572,10 +1577,6 @@ body.modal-open {
   background-color: #FFFFFF;
 }
 
-.menu-container.is-open {
-  display: block;
-}
-
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
@@ -1591,6 +1592,17 @@ body.modal-open {
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: #212121;
+  }
+  .menu-container.is-open {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 /*# sourceMappingURL=main.css.map */
