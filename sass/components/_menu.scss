@@ -20,7 +20,7 @@
 
 .menu-container {
     display: none;
-
+    background-color: $secondary-text-color;
     position: absolute;
     top: 100%;
     left: 0;
@@ -42,3 +42,4 @@
         display: block;
     }
 }
+
