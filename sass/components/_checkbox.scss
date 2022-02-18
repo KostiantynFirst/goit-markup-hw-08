@@ -29,6 +29,10 @@
         text-decoration: none;
         color: $accent-color;
         border-bottom: 1px solid $accent-color;
+
+        @media screen and (max-width: 460px) {
+            font-size: 10px;
+        }
     
     }
     
@@ -41,7 +45,11 @@
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.03em;
-        // white-space: nowrap;
+        white-space: nowrap;
+
+        @media screen and (max-width: 460px) {
+            font-size: 10px;
+        }
     }
     
 }
