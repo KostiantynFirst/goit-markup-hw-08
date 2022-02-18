@@ -394,12 +394,6 @@ body.modal-open {
   margin-left: 90px;
 }
 
-@media screen and (max-width: 768px) {
-  .sitenav {
-    display: none;
-  }
-}
-
 .sitenav__link {
   position: relative;
   display: block;
@@ -431,12 +425,6 @@ body.modal-open {
 
 .sitenav__link:hover, .sitenav__link:focus {
   color: #2196F3;
-}
-
-@media screen and (max-width: 768px) {
-  .authnav {
-    display: none;
-  }
 }
 
 .authnav--footer {
