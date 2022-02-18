@@ -4,6 +4,7 @@
     border: none;
     background-color: transparent;
     // margin-left: 284px;
+    z-index: 600;
 
     @media screen and (min-width: 768px) {
         display: none;
@@ -42,7 +43,7 @@
     @media screen and (max-width: 767px) {
         display: none;
         position: absolute;
-        top: 100%;
+        top: 20%;
         left: 0;
     
         width: 100%;
