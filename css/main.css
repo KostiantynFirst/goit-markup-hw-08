@@ -1181,7 +1181,7 @@ body.modal-open {
 .footer__icon {
   position: absolute;
   top: 50%;
-  right: 34%;
+  right: 13%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   fill: #FFFFFF;
