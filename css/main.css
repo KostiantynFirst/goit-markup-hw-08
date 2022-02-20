@@ -513,6 +513,7 @@ body.modal-open {
 }
 
 .authnav__link {
+  display: block;
   text-decoration: none;
   font-weight: 500;
   line-height: 1.14;
@@ -1685,7 +1686,8 @@ body.modal-open {
   padding: 0;
   border: none;
   background-color: transparent;
-  z-index: 600;
+  position: relative;
+  z-index: 9999;
 }
 
 @media screen and (min-width: 768px) {
@@ -1719,8 +1721,8 @@ body.modal-open {
     top: 0;
     left: 0;
     padding: 40px 48px;
-    width: 100%;
-    height: 796px;
+    width: 100vw;
+    height: 100vh;
     padding: 48px 40px;
     text-align: left;
     font-weight: 500;
@@ -1774,6 +1776,7 @@ body.modal-open {
 }
 
 .menu__links {
+  display: block;
   position: relative;
   font-size: 18px;
   line-height: 1.22;
@@ -1788,7 +1791,7 @@ body.modal-open {
   bottom: 0;
   right: -10px;
   width: 1px;
-  height: 22px;
+  height: 100%;
   color: rgba(33, 33, 33, 0.2);
   background-color: rgba(33, 33, 33, 0.2);
 }
