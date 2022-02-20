@@ -447,6 +447,15 @@ body.modal-open {
   text-decoration: none;
 }
 
+@media screen and (min-width: 768px) {
+  .authnav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .authnav__item--phone {
     margin-bottom: 32px;
@@ -454,15 +463,20 @@ body.modal-open {
 }
 
 @media screen and (min-width: 768px) {
-  .authnav__item--phone {
+  .authnav__item {
     margin-bottom: 10px;
   }
 }
 
 .authnav__icon {
-  display: none;
   fill: currentColor;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .authnav__icon {
+    display: none;
+  }
 }
 
 .authnav__link {
@@ -516,6 +530,17 @@ body.modal-open {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.02em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    align-items: center;
   }
 }
 
