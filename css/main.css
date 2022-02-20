@@ -1169,6 +1169,11 @@ body.modal-open {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -1182,12 +1187,27 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .footer__address {
   margin-top: 20px;
 }
 
 .footer__links {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__links {
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
 }
 
 .footer__link:not(:last-child) {
@@ -1202,8 +1222,21 @@ body.modal-open {
   color: #FFFFFF;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__text {
+    margin-right: auto;
+  }
+}
+
 .footer__socialmedia {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__socialmedia {
+    padding-top: 12px;
+    margin-bottom: 0;
+  }
 }
 
 .footer__block {
@@ -1227,6 +1260,15 @@ body.modal-open {
   margin-right: auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__block {
+    max-width: 570px;
+    padding-top: 12px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .footer__form {
   width: 100%;
   display: -webkit-box;
@@ -1244,6 +1286,15 @@ body.modal-open {
           justify-content: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .footer__contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1255,6 +1306,13 @@ body.modal-open {
   width: 100%;
   padding: 0;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__contact {
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
 }
 
 .footer__input {
@@ -1281,6 +1339,12 @@ body.modal-open {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__input {
+    width: 358px;
+  }
 }
 
 .footer__button {
