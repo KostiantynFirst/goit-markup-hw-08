@@ -1,15 +1,24 @@
 .sitenav {
-    // display: flex;
-    // flex-direction: column;
-    // margin-left: 90px;
 
-    // &__item:not(:last-child) {
-    //     margin-right: 50px;
-    // }
+    &__item:not(:last-child) {
+            @media screen and (max-width: 767px) {
+                margin-bottom: 32px;
+            }
 
-    // @media screen and (max-width: $tablet) {
-    //     display: none;
-    // }
+            @media screen and (min-width: 768px) {
+                margin-right: 50px;
+                }
+        }
+    
+    @media screen and (min-width: 768px) {
+            display: flex;
+            margin-right: 84px;
+
+            &__item:not(:last-child) {
+            // margin-right: 50px;
+        }
+    }
+
 }
 
 
@@ -21,8 +30,8 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-    padding-top: 33px;
-    padding-bottom: 31px;
+    // padding-top: 33px;
+    // padding-bottom: 31px;
 
     transition: color 250ms $timing-function;
 
@@ -30,6 +39,9 @@
     &--current {
         color: $accent-color; 
     }
+
+
+    
 
     // &--current::after {
     //     position: absolute;
