@@ -408,6 +408,12 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .sitenav {
+    margin-right: 305px;
+  }
+}
+
 .sitenav__link {
   position: relative;
   display: block;
@@ -420,8 +426,18 @@ body.modal-open {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.sitenav__link--current {
-  color: #2196F3;
+@media screen and (min-width: 768px) {
+  .sitenav__link--current::after {
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    content: " ";
+    width: 100%;
+    height: 4px;
+    color: #2196F3;
+    background: #2196F3;
+    border-radius: 2px;
+  }
 }
 
 .sitenav__link:hover, .sitenav__link:focus {
@@ -456,13 +472,22 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .authnav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .authnav__item--phone {
     margin-bottom: 32px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .authnav__item {
     margin-bottom: 10px;
   }
@@ -513,23 +538,34 @@ body.modal-open {
 
 @media screen and (min-width: 768px) {
   .authnav__link--phone {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.02em;
   }
 }
 
 .authnav__link--mail {
-  font-size: 24px;
+  font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
 }
 
-@media screen and (min-width: 768px) {
-  .authnav__link {
-    font-size: 12px;
+@media screen and (max-width: 767px) {
+  .authnav__link--mail {
+    font-size: 24px;
     line-height: 1.17;
     letter-spacing: 0.02em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .authnav__link--mail {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .authnav__link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

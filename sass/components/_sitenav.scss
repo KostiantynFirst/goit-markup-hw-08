@@ -13,13 +13,13 @@
     @media screen and (min-width: 768px) {
             display: flex;
             margin-right: 84px;
+        }
 
-            &__item:not(:last-child) {
-            // margin-right: 50px;
+    @media screen and (min-width: 1200px) {
+            margin-right: 305px;
         }
     }
 
-}
 
 
 .sitenav__link {
@@ -35,10 +35,25 @@
 
     transition: color 250ms $timing-function;
 
+        &--current::after {
+            @media screen and (min-width: 768px) {
+                position: absolute;
+                bottom: -24px;
+                left: 0;
+                content:" ";
+                width: 100%;
+                height: 4px;
+                color: $accent-color; 
+                background: $accent-color; 
+                border-radius: 2px;
+            }
+        }
 
-    &--current {
+        &:hover, 
+        &:focus {
         color: $accent-color; 
     }
+}
 
 
     
@@ -54,9 +69,5 @@
     //     border-radius: 2px;
     // }
 
-    &:hover, 
-    &:focus {
-        color: $accent-color; 
-    }
+    
 
-}
