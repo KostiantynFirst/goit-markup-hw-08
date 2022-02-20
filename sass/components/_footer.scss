@@ -8,11 +8,16 @@
     background-color: $background-third-color;
     text-align: center;
 
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+
     &__container {
             @media screen and (min-width: 768px) {
                 display: flex;
                 justify-content: space-around;
-        }
+            }
+
     }
     
     // &__links {
@@ -118,8 +123,6 @@
         transform: translateY(-50%);
         fill: $secondary-text-color;
     }
-
-
 
 }
 

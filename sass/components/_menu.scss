@@ -31,6 +31,7 @@
     @media screen and (max-width: 767px) {
         display: none;
         position: absolute;
+
         top: 0;
         left: 0;
     
@@ -49,6 +50,9 @@
         letter-spacing: 0.02em;
         background-color: $secondary-text-color;
         color: $title-text-color;
+
+
+
 
         &.is-open {
             display: block;
