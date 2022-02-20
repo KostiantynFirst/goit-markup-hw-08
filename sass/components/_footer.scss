@@ -42,11 +42,16 @@
         @media screen and (min-width: 1200px) {
             margin-right: 70px;
             margin-bottom: 0;
+            text-align: left;
         }
     }
 
     &__link:not(:last-child) {
         margin-bottom: 8px;
+
+        @media screen and (min-width: 120px) {
+            margin-bottom: 9px;
+        }
     }
     
     &__text {
@@ -88,7 +93,6 @@
 
         @media screen and (min-width: 1200px) {
             max-width: 570px;
-            padding-top: 12px;
             padding-left: 0;
             padding-right: 0;
         }

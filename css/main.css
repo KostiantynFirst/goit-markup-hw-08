@@ -486,6 +486,14 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .authnav--footer {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .authnav {
     -webkit-box-orient: vertical;
@@ -1207,11 +1215,18 @@ body.modal-open {
   .footer__links {
     margin-right: 70px;
     margin-bottom: 0;
+    text-align: left;
   }
 }
 
 .footer__link:not(:last-child) {
   margin-bottom: 8px;
+}
+
+@media screen and (min-width: 120px) {
+  .footer__link:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer__text {
@@ -1263,7 +1278,6 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .footer__block {
     max-width: 570px;
-    padding-top: 12px;
     padding-left: 0;
     padding-right: 0;
   }
