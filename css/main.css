@@ -1185,6 +1185,17 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer__container {
     display: -webkit-box;
@@ -1278,6 +1289,8 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .footer__block {
     max-width: 570px;
+    margin-left: 93px;
+    padding-top: 12px;
     padding-left: 0;
     padding-right: 0;
   }
