@@ -634,7 +634,7 @@ body.modal-open {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  max-height: 400px;
+  max-height: 600px;
   padding-top: 118px;
   padding-bottom: 118px;
   padding-left: 60px;
@@ -646,6 +646,12 @@ body.modal-open {
   background-size: cover;
   background-position: center;
   background-color: #2F303A;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+  }
 }
 
 .hero__container {
@@ -661,6 +667,14 @@ body.modal-open {
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
 }
 
 .section {
@@ -1182,6 +1196,7 @@ body.modal-open {
             align-items: center;
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: left;
   }
 }
 
