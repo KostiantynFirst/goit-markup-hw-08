@@ -201,8 +201,17 @@
 
     .footer__input:focus + &, 
     .footer__input:not(:placeholder-shown) + & {
-        transform: translateY(-335%);
+
+        @media screen and (max-width: 1199x) {
+            transform: translateY(-335%);
+        }
+
+        @media screen and (min-width: 1200px) {
+            transform: translateY(170%);
+        }
+        
     }   
+
 }
 
 

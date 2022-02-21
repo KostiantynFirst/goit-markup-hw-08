@@ -1422,10 +1422,20 @@ body.modal-open {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__input:focus + .footer__mail,
-.footer__input:not(:placeholder-shown) + .footer__mail {
-  -webkit-transform: translateY(-335%);
-          transform: translateY(-335%);
+@media screen and (max-width: 1199x) {
+  .footer__input:focus + .footer__mail,
+  .footer__input:not(:placeholder-shown) + .footer__mail {
+    -webkit-transform: translateY(-335%);
+            transform: translateY(-335%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__input:focus + .footer__mail,
+  .footer__input:not(:placeholder-shown) + .footer__mail {
+    -webkit-transform: translateY(170%);
+            transform: translateY(170%);
+  }
 }
 
 .socialmedia {
