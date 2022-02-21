@@ -22,16 +22,24 @@
     &__link {
         margin-left: 4px;
 
-        font-size: 12px;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-
         text-decoration: none;
         color: $accent-color;
         border-bottom: 1px solid $accent-color;
 
+        @media screen and (max-width: 1199px) {
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.03em;
+        }
+
         @media screen and (max-width: 460px) {
             font-size: 10px;
+        }
+
+        @media srceen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
         }
     
     }
@@ -42,13 +50,23 @@
         align-items:center;
         justify-content: center;
 
-        font-size: 12px;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
+
         white-space: nowrap;
+
+        @media screen and (max-width: 1199px) {
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.03em;
+        }
 
         @media screen and (max-width: 460px) {
             font-size: 10px;
+        }
+
+        @media srceen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
         }
     }
     
