@@ -1594,7 +1594,7 @@ body.modal-open {
 
 .modalclose:hover .modalclose__icon,
 .modalclose:focus .modalclose__icon {
-  fill: var(--accent-color);
+  fill: #2196F3;
 }
 
 .form {
