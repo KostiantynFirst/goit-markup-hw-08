@@ -202,7 +202,7 @@
     .footer__input:focus + &, 
     .footer__input:not(:placeholder-shown) + & {
 
-        @media screen and (max-width: 1199x) {
+        @media screen and (max-width: 1199px) {
             transform: translateY(-335%);
         }
 
