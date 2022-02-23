@@ -75,9 +75,9 @@
         }
 
 
-    @media screen and (max-width: 767px) {
-        height: 622px;
-    }
+    // @media screen and (max-width: 767px) {
+    //     height: 622px;
+    // }
 
     @media screen and (min-width: 768px) {
         width: calc((100% - 4 * 15px) / 2);

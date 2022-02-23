@@ -907,12 +907,6 @@ body.modal-open {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .persons__item {
-    height: 622px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .persons__item {
     width: calc((100% - 4 * 15px) / 2);
