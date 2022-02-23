@@ -860,6 +860,18 @@ body.modal-open {
           justify-content: center;
 }
 
+@media screen and (max-width: 767px) {
+  .persons__img {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .persons__img {
+    width: 354px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .persons {
     display: -webkit-box;
@@ -892,17 +904,6 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .persons__item:not(:last-child) {
     margin-bottom: 30px;
-  }
-}
-
-.persons__item__img {
-  max-width: 100%;
-}
-
-@media screen and (max-width: 767px) {
-  .persons__item__img {
-    width: 450px;
-    height: 460px;
   }
 }
 
