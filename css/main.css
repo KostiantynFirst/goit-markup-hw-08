@@ -1987,7 +1987,7 @@ body.modal-open {
     left: 0;
     padding: 40px 48px;
     width: 100vw;
-    height: 796px;
+    height: 100vh;
     padding: 48px 40px;
     text-align: left;
     font-weight: 500;

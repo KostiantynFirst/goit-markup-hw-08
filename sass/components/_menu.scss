@@ -39,8 +39,8 @@
         padding: 40px 48px;
 
         width: 100vw;
-        height: 796px;
-        // height: 100vh;
+        // height: 796px;
+        height: 100vh;
 
         padding: 48px 40px;
         text-align: left;
@@ -51,9 +51,6 @@
         letter-spacing: 0.02em;
         background-color: $secondary-text-color;
         color: $title-text-color;
-
-
-
 
         &.is-open {
             display: block;
