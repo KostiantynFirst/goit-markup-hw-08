@@ -9,7 +9,7 @@
     padding-left: 60px;
     padding-right: 60px;
     text-align: center;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-img.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/bg-img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -46,7 +46,7 @@
            (min-resolution: 192dpi),
            (min-resolution: 2dppx) {
     .hero {
-        background-image: url(../images/bg-img2.jpg);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/bg-img2.jpg');
         }
     }
 
