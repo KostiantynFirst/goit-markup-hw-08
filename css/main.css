@@ -1148,12 +1148,14 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .portfolio__img {
     max-width: 450px;
+    height: 294px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .portfolio__img {
     width: 354px;
+    height: 294px;
   }
 }
 
@@ -1218,6 +1220,12 @@ body.modal-open {
   }
 }
 
+@media scriptreen and (max-width: 767px) {
+  .portfolio__item {
+    height: 404px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .portfolio__item {
     width: calc((100% - 4 * 15px) / 2);
@@ -1233,8 +1241,10 @@ body.modal-open {
 }
 
 .portfolio__text {
+  display: block;
   position: absolute;
   top: 100%;
+  left: 0;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
@@ -1256,7 +1266,7 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .portfolio__text {
-    padding: 63px 24px;
+    padding: 77px 24px;
   }
 }
 
