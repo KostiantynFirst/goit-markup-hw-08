@@ -1235,7 +1235,6 @@ body.modal-open {
 .portfolio__text {
   position: absolute;
   top: 100%;
-  padding: 63px 24px;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
@@ -1253,6 +1252,24 @@ body.modal-open {
   opacity: .9;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__text {
+    padding: 63px 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__text {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__text {
+    padding: 63px 24px;
+  }
 }
 
 .footer {
