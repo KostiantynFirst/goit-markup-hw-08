@@ -397,6 +397,13 @@ body.modal-open {
           align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .sitenav__item:not(:last-child) {
     margin-bottom: 32px;
@@ -719,9 +726,22 @@ body.modal-open {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .section__jobs {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section__jobs {
+    padding-top: 0;
   }
 }
 
@@ -853,6 +873,7 @@ body.modal-open {
 .jobs__text {
   width: 100%;
   margin: 0;
+  font-weight: 700;
   padding-left: 83px;
   padding-right: 82px;
   padding-top: 27px;
