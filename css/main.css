@@ -446,7 +446,7 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .sitenav__link--current::after {
     position: absolute;
-    bottom: -24px;
+    bottom: -33px;
     left: 0;
     content: " ";
     width: 100%;
@@ -753,6 +753,13 @@ body.modal-open {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 1199px) {
+  .section__title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .features {
     display: -webkit-box;
@@ -819,10 +826,8 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .features__text {
-    text-align: left;
-  }
+.features__text {
+  text-align: left;
 }
 
 .features .features__item {
